@@ -96,7 +96,7 @@ var convert = function (font) {
 		}
 	}
 
-	font.glyphs.forEach(function (glyph) {
+	font.glyphs.glyphs.forEach(function (glyph) {
 		if (glyph.unicode !== undefined) {
 			var glyphCharacter = String.fromCharCode(glyph.unicode);
 			var needToExport = true;
